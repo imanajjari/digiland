@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/digiland/static/css/main.7ae1db97.css",
-    "main.js": "/digiland/static/js/main.780c48fd.js",
+    "main.js": "/digiland/static/js/main.36460ec1.js",
     "static/media/2.webp": "/digiland/static/media/2.81335c7d154643afd359.webp",
     "static/media/1.gif": "/digiland/static/media/1.b1f1e66ad08c75b9ebed.gif",
     "static/media/3.gif": "/digiland/static/media/3.a2d4f3ff50d242206417.gif",
@@ -20,10 +20,10 @@
     "static/media/1.svg": "/digiland/static/media/1.ad3667ccc3a30d79c40b6b11896cc27f.svg",
     "index.html": "/digiland/index.html",
     "main.7ae1db97.css.map": "/digiland/static/css/main.7ae1db97.css.map",
-    "main.780c48fd.js.map": "/digiland/static/js/main.780c48fd.js.map"
+    "main.36460ec1.js.map": "/digiland/static/js/main.36460ec1.js.map"
   },
   "entrypoints": [
     "static/css/main.7ae1db97.css",
-    "static/js/main.780c48fd.js"
+    "static/js/main.36460ec1.js"
   ]
 }
