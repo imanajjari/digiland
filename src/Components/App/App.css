@@ -1,0 +1,13 @@
+* {
+  font-family: font;
+  font-family: fn;
+}
+@font-face {
+  font-family: font;
+  src: url("../Pages/Fonts/IRANSansWeb_Medium.ttf");
+}
+
+@font-face {
+  font-family: fn;
+  src: url("../Pages/Fonts/IRANSansXFaNum-Regular.ttf");
+}
