@@ -16,7 +16,7 @@ export default function Error() {
           <div className="text-[100px]">404</div>
           <p dir="rtl">صفحه مورد نظر یافت نشد !!...</p>
           <Link
-            to="/"
+            to="/digiland"
             className="dark:bg-blue-500  dark:hover:bg-blue-700 bg-rose-500  hover:bg-rose-700 text-white font-bold mt-5 py-2 px-4 rounded-xl"
           >
             {" "}

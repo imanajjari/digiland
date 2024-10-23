@@ -1,19 +1,19 @@
 import Updatedcomponent from "./Hoc";
-
+import { FaCheckCircle } from "react-icons/fa";
 const Login = ({
   firstname,
-  handlerfirstname,
-  handleranswer,
-  savefirstname,
   lastname,
-  handlerlastname,
-  savelastname,
   firstrandomnumber,
   secondrandomnumber,
   refreshrandomnumber,
   generaterandomnumber,
   submit,
   answer,
+  phonenumber,
+  handlerfirstname,
+  handleranswer,
+  handlerlastname,
+  handlerphonenumber,
 }) => {
   return (
     <>
@@ -25,7 +25,7 @@ const Login = ({
           />
         </div>
         <div
-          className=" rounded-xl text-right text-white bg-red-600 dark:bg-blue-700"
+          className=" rounded-xl text-right  bg-pink-200 text-gray-900 font-black dark:border-none dark:text-white border-2 border-rose-600 dark:bg-blue-800"
           dir="rtl"
         >
           <h1 className="text-center py-2">عضویت</h1>
@@ -50,12 +50,36 @@ const Login = ({
                 className="text-black mr-3 rounded-lg mt-1 text-center p-2 outline-none"
               />
             </div>
+            <div>
+              <div className="mr-5">شماره تماس </div>
+              <input
+                placeholder="09...."
+                value={phonenumber}
+                onChange={handlerphonenumber}
+                type="tel"
+                dir="ltr"
+                className="text-black mr-3 rounded-lg mt-1 text-center p-2 outline-none"
+              />
+              <p
+                className={
+                  phonenumber.startsWith("09") && phonenumber.length == 11
+                    ? "text-green-600  text-[12px] pr-4 mt-2"
+                    : "text-red-800 dark:text-orange-600 pr-4 mt-2 text-[13px]"
+                }
+              >
+                {phonenumber.startsWith("09") && phonenumber.length == 11 ? (
+                  <FaCheckCircle className="text-[25px]" />
+                ) : (
+                  "شماره تماس نامعتبر می باشد"
+                )}
+              </p>
+            </div>
           </div>
           <div className="mt-5 flex gap-3 flex-wrap justify-center ">
             <input
               value={answer}
               onChange={handleranswer}
-              type="text"
+              type="tel"
               className="text-black w-[30%] text-center outline-none py-1 rounded-lg"
             />
 
@@ -68,13 +92,17 @@ const Login = ({
           </div>
           <div className="flex justify-around gap-x-[60px]  mt-[40px] mb-[20px]">
             <button
-              disabled={firstname.length == 0 || lastname.length == 0}
+              disabled={
+                firstname.length == 0 ||
+                lastname.length == 0 ||
+                !phonenumber.startsWith("09") ||
+                phonenumber.length != 11
+              }
               onClick={submit}
-              className="disabled:bg-slate-500 disabled:text-gray-600 rounded-lg bg-orange-500  text-gray-100 font-bold py-2 px-4"
+              className="disabled:bg-slate-300 disabled:text-gray-400 disabled:font-thin rounded-lg bg-orange-500  text-gray-100 font-bold py-2 px-4"
             >
               ثبت
             </button>
-            {savefirstname} {savelastname}
           </div>
         </div>
         <div></div>

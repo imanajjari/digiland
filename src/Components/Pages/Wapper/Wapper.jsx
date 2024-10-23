@@ -9,6 +9,7 @@ import Footer from "../Footer/Footer";
 import Error from "../Error404/Error";
 import Singleproducts from "../Products/Singleproducts";
 import Contact from "../Contact/Contact";
+import User from "../Menu/User";
 
 export default function Wapper() {
   return (
@@ -17,11 +18,12 @@ export default function Wapper() {
         <Logo />
         <Totalmenu />
         <Routes>
-          <Route path="/" element={<Firstcomp />}></Route>
+          <Route path="/digiland" element={<Firstcomp />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/Contact" element={<Contact />}></Route>
           <Route path="/Products" element={<Products />}></Route>
           <Route path="/Products/:id" element={<Singleproducts />}></Route>
+          <Route path="/User" element={<User />}></Route>
           <Route path="/*" element={<Error />}></Route>
         </Routes>
         <Footer />
