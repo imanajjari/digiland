@@ -41,7 +41,7 @@ export default function Contact() {
           </div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.4248708047844!2d51.44316107524761!3d35.61725103348686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f91fc161c34a54b%3A0x89ed60246299336f!2sTehran%20Province%2C%20Rey%2C%20District%2020%D8%8C%20Azadi%2C%20Iran!5e0!3m2!1sen!2s!4v1708093368306!5m2!1sen!2s"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
             className="pb-7 ml-5 my-3 rounded-lg dark:border-none h-[450px] smd:w-[280px] md:w-[560px] border-2 border-gray-300 "
             loading="lazy"
             height={450}
